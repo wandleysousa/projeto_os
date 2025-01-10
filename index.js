@@ -28,26 +28,33 @@ function clickMenu(){
     }
 }
 
+/*/dados cliente
 let nome = document.getElementById('nclien')
 let cpf = document.getElementById('cpf')
 let telefone = document.getElementById('telefone')
 let email = document.getElementById('email')
 let data = document.getElementById('data')
-let endereco = document.getElementById('ende')
-let obs = document.getElementById('Observacoes')
+let endereco = document.getElementById('ende')*/
+//dados os
+
+let desc = document.getElementById('Descricao')
+let quanti = document.getElementById('Quantidade')
+let valuni = document.getElementById('valoruni')
+let total = document.getElementById('restot')
 let adicionados = document.getElementById('Adicionados')
 let botadd = document.getElementById('add')
+//os´s
+let os = document.getElementById('os')
+let obs = document.getElementById('Observacoes')
 
 
 
 function adicionar(){
-    nome = nome.value
-    if(nome.length != 0){
-        adicionados.innerHTML = `<strong>Nome: </strong> ${nome}`
-    }else{
-        window.alert('verifique os dados!')
-    }
+    desc = desc.value
+    if(desc.length != 0){
+        adicionados.innerHTML = desc
 
+    }
 }
 
 
