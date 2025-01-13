@@ -51,8 +51,8 @@ let obs = document.getElementById('Observacoes')
 
 function adicionar(){
     desc = desc.value
-    if(desc.length != 0){
-        adicionados.innerHTML = desc
+    if(desc.length != 0 && quanti.value.length != 0 && valuni.value.length != 0){
+        adicionados.innerHTML = `<strong>Desc: </Strong> ${desc} | <strong> Quantidade: </strong> ${quanti.value} | <strong>Valor uni:<strong> ${valuni.value}`
 
     }
 }
