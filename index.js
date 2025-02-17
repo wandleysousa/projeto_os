@@ -28,13 +28,13 @@ function clickMenu(){
     }
 }
 
-/*/dados cliente
+//dados cliente
 let nome = document.getElementById('nclien')
 let cpf = document.getElementById('cpf')
 let telefone = document.getElementById('telefone')
 let email = document.getElementById('email')
 let data = document.getElementById('data')
-let endereco = document.getElementById('ende')*/
+let endereco = document.getElementById('ende')
 //dados os
 
 let desc = document.getElementById('Descricao')
@@ -49,17 +49,41 @@ let obs = document.getElementById('Observacoes')
 
 
 
-function adicionar(){
-    desc = desc.value
-    if(desc.length != 0 && quanti.value.length != 0 && valuni.value.length != 0){
-        adicionados.innerHTML = `<strong>Desc: </Strong> ${desc} | <strong> Quantidade: </strong> ${quanti.value} | <strong>Valor uni:<strong> ${valuni.value}`
-
+function tot(){
+    if(valuni.value.length != 0){
+        calc = ''
+        if(quanti.value > 1){
+            calc = Number(valuni.value) * Number(quanti.value)
+            total.innerHTML = calc 
+        }else if(quanti.value == 1){
+            calc = valuni.value
+            total.innerHTML = valuni.value  
+        }
+      
     }
+    return 
 }
 
+const { createApp, ref } = Vue
+
+createApp({
+  setup() {
+    const message = ref(`DESC: ${desc.value}`
+    )
+    return {
+      message
+    }
+  }
+}).mount('#adicionados')
 
 
 
+
+
+
+/*adicionados.innerHTML = ''
+        adicionados.innerHTML += `<strong>Desc: </Strong> ${desc} | <strong> Quantidade: </strong> ${quanti.value} | <strong>Valor uni:<strong> ${valuni.value} <strong>Total:</strong> ${calc}`*/
+        
 
 
 
