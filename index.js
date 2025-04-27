@@ -30,17 +30,4 @@ function clickMenu(){
 
 
 
-function tot(){
-    if(valuni.value.length != 0){
-        calc = ''
-        if(quanti.value > 1){
-            calc = Number(valuni.value) * Number(quanti.value)
-            total.innerHTML = calc 
-        }else if(quanti.value == 1){
-            calc = valuni.value
-            total.innerHTML = valuni.value  
-        }
-      
-    }
-    return 
-}
+let desc = 
