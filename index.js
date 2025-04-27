@@ -28,25 +28,6 @@ function clickMenu(){
     }
 }
 
-//dados cliente
-let nome = document.getElementById('nclien')
-let cpf = document.getElementById('cpf')
-let telefone = document.getElementById('telefone')
-let email = document.getElementById('email')
-let data = document.getElementById('data')
-let endereco = document.getElementById('ende')
-//dados os
-
-let desc = document.getElementById('Descricao')
-let quanti = document.getElementById('Quantidade')
-let valuni = document.getElementById('valoruni')
-let total = document.getElementById('restot')
-let adicionados = document.getElementById('Adicionados')
-let botadd = document.getElementById('add')
-//os´s
-let os = document.getElementById('os')
-let obs = document.getElementById('Observacoes')
-
 
 
 function tot(){
@@ -63,40 +44,3 @@ function tot(){
     }
     return 
 }
-
-const { createApp, ref } = Vue
-
-createApp({
-  setup() {
-    const message = ref(`DESC: ${desc.value}`
-    )
-    return {
-      message
-    }
-  }
-}).mount('#adicionados')
-
-
-
-
-
-
-/*adicionados.innerHTML = ''
-        adicionados.innerHTML += `<strong>Desc: </Strong> ${desc} | <strong> Quantidade: </strong> ${quanti.value} | <strong>Valor uni:<strong> ${valuni.value} <strong>Total:</strong> ${calc}`*/
-        
-
-
-
-
-
-
-/* criação do botao para remover itens adicionado
-
- {order.items.length > 1 && (
-                  <button
-                    onClick={() => removeItem(index)}
-                    className="mt-6 text-red-600 hover:text-red-800"
-                  >
-                    Remove
-                  </button>
-*/

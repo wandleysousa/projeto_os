@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @media screen and (min-width: 800px){/*tablet*/
-    main{
+    main{height: 81.3vh;
         width: max-content;
     }
     header{
@@ -32,4 +32,5 @@
     #hambur{
         display: none;
     }
+    
 }
